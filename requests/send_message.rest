@@ -1,0 +1,7 @@
+post http://localhost:3001/api/messages
+Content-Type: application/json
+
+{
+    "name": "melxi",
+    "content": "Hello World!"
+}

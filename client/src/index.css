@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-chat-form {
+  display: flex;
+}
+
+.join-chat-form input,
+.join-chat-form button {
+  padding: 12px;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  outline: none;
+}
+
+.join-chat-form button {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.chat-area {
+  width: 80%;
+  max-width: 650px;
+  height: 560px;
+  margin-top: 120px;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.chat-area ul {
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.chat-area .name {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.chat-area .content {
+  word-break: break-all;
+}
+
+.send-message-form {
+  width: 80%;
+  max-width: 650px;
+  border: 1px solid black;
+}
+
+.send-message-form form {
+  display: flex;
+}
+
+.send-message-form textarea {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.4rem;
+  resize: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.send-message-form button {
+  padding: 24px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .send-message-form form {
+    flex-direction: column;
+  }
+}
